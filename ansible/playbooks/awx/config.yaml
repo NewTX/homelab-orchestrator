@@ -131,7 +131,7 @@
         inputs:
           username: '{{ host_user }}'
           password: '{{ host_password }}'
-          ssh_key_data: "{{ lookup('file', '/Users/vikaspogu/.ssh/id_rsa') }}"
+          ssh_key_data: "{{ lookup('file', '/Users/guanfuli/.ssh/id_rsa') }}"
 
     - name: Quay Credentials
       ansible.controller.credential:
@@ -174,7 +174,7 @@
         scm_update_on_launch: true
         scm_delete_on_update: true
         scm_type: git
-        scm_url: https://github.com/Vikaspogu/homelab-orchestrator.git
+        scm_url: https://github.com/NewTX/homelab-orchestrator.git
 
     - name: Add inventory source to inventory
       ansible.controller.inventory_source:
